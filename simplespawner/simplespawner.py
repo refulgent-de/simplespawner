@@ -14,7 +14,7 @@ class SimpleLocalProcessSpawner(LocalProcessSpawner):
     """
 
     home_path_template = Unicode(
-        '/tmp/{userid}',
+        '/opt/jupyterhub/{username}',
         config=True,
         help='Template to expand to set the user home. {userid} and {username} are expanded'
     )
